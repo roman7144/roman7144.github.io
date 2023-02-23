@@ -1,0 +1,292 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .promo {
+        &__title {
+            margin-left: 280px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &_subtitle {
+            margin-left: 280px; 
+        }
+        &__btns {
+            margin-left: 280px;
+        }
+    }
+    .aboutme {
+        &__card {
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+    }
+    .skills {
+        &__items {
+            margin-top: 20px;
+        }
+        &__grid {
+            margin-left: 5%;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit,300px);
+        }
+        &__title {
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+    .portfolio {
+        min-height: 750px;
+    }
+    .contacts {
+        min-height: 600px;
+        padding: 20px 0 20px 0;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+        &__input {
+            width: 95%;
+        }
+        &__textarea {
+            width: 97%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .promo {
+        min-height: 600px;
+        &__title {
+            margin-left: 150px;
+            line-height: 40px;
+            font-size: 40px;
+        }
+        &_subtitle {
+            margin-left: 150px; 
+        }
+        &__btns {
+            margin-left: 150px;
+        }
+    }
+    .aboutme {
+        min-height: 600px;
+        &__card {
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+    }
+    .skills {
+        &__items {
+            margin-top: 20px;
+        }
+        &__grid {
+            margin-left: 5%;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit,300px);
+        }
+        &__title {
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+    .divider {
+        &_skills {
+            width: 160px;
+        }
+    }
+    .portfolio {
+        min-height: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') left 50%/cover no-repeat;
+        min-height: 600px;
+        &__title {
+            width: 400px;
+            margin-left: 0px;
+            font-size: 35px;
+        }
+        &_subtitle {
+            margin-left: 0px; 
+        }
+        &__btns {
+            margin-left: 0px;
+        }
+    }
+    .aboutme {
+        min-height: 600px;
+        &__card {
+            padding-top: 50px;
+            margin-left: 0;
+            width: 100%;
+        }
+        h2 {
+            position: relative;
+            writing-mode: inherit;
+            transform: inherit;
+            margin-left: inherit;
+        }
+    }
+    .skills {
+        &__items {
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+        }
+        &__grid {
+            width: 90%;
+            margin-left: 5%;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit,300px);
+        }
+        &__title {
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+    }
+    .divider {
+        &_skills {
+            width: 60px;
+        }
+    }
+    .portfolio {
+        padding-top: 25px;
+        &__title {
+            width: 300px;
+            font-size: 26px;
+            line-height: 26px;
+            margin: 0 auto;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit,280px);
+            justify-content: center;
+        }
+
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+        &__title {
+            font-size: 26px;
+            line-height: 26px;
+            text-align: center;
+        }
+        &__subtitle {
+            display: none;
+        }
+        .divider {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__social {
+            display: flex;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 95%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        min-height: 600px;
+        background-position-x: 13%;
+        &__title {
+            width: 300px;
+            font-size: 26px;
+            line-height: 26px;
+        }
+        &_subtitle {
+            margin-left: 0px; 
+        }
+        &__btns {
+            margin-left: 0px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+        &__link {
+            &:before {
+                left: 20px;
+            }
+        }
+    }
+    .btn {
+        &_nn {
+            background: #383330 ;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        &:hover {
+            color: #ffffff;
+        }
+    }
+    .skills {
+        &__items {
+            margin-top: 20px;
+        }
+        &__grid {
+            width: 90%;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit,300px);
+            margin-left: 10%;
+            margin-top: 30px;
+        }
+        &__title {
+            line-height: 20px;
+            font-size: 20px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    }
+}
